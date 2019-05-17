@@ -7,18 +7,18 @@
 * found in the file LICENSE that is included with this distribution.
 \*************************************************************************/
 
-/* Copyed from EPICS Base 3.16 branch */
+/* Derived from EPICS Base 7.0.2 branch softMain.cpp */
 
-/* Author: Andrew Johnson	Date: 2003-04-08 */
+/* Original Author: Andrew Johnson	Date: 2003-04-08 */
 
 /* Usage:
- *  softIoc [-D softIoc.dbd] [-h] [-S] [-s] [-a ascf]
+ *  loadServer [-D dbd/loadServer.dbd] [-h] [-S] [-s] [-a ascf]
  *	[-m macro=value,macro2=value2] [-d file.db]
  *	[-x prefix] [st.cmd]
  *
  *  If used the -D option must come first, and specify the
- *  path to the softIoc.dbd file.  The compile-time install
- *  location is saved in the binary as a default.
+ *  path to the loadServer.dbd file.
+ *  The compile-time install location is saved in the binary as a default.
  *
  *  Usage information will be printed if -h is given, then
  *  the program will exit normally.
@@ -71,15 +71,10 @@
 #include "iocInit.h"
 #include "iocsh.h"
 
-extern "C" int softIocPVA_registerRecordDeviceDriver(struct dbBase *pdbbase);
+extern "C" int loadServer_registerRecordDeviceDriver(struct dbBase *pdbbase);
 
-#ifdef __rtems__
-#define DBD_FILE "dbd/softIocPVA.dbd"
+#define DBD_FILE "dbd/loadServerPVA.dbd"
 #define EXIT_FILE "db/softIocExit.db"
-#else
-#define DBD_FILE FINAL_LOCATION "/dbd/softIocPVA.dbd"
-#define EXIT_FILE FINAL_LOCATION "/db/softIocExit.db"
-#endif
 
 #ifdef VERSION_INT
 #if EPICS_VERSION_INT>=VERSION_INT(3,15,0,1)
@@ -100,10 +95,10 @@ static void exitSubroutine(subRecord *precord) {
 }
 
 static void usage(int status) {
-    printf("Usage: %s [-D softIoc.dbd] [-h] [-S] [-a ascf]\n", arg0);
+    printf("Usage: %s [-D dbd/loadServer.dbd] [-h] [-S] [-a ascf]\n", arg0);
     puts("\t[-m macro=value,macro2=value2] [-d file.db]");
     puts("\t[-x prefix] [st.cmd]");
-    puts("Compiled-in path to softIocPVA.dbd is:");
+    puts("Compiled-in path to loadServer.dbd is:");
     printf("\t%s\n", base_dbd);
     epicsExit(status);
 }
@@ -141,7 +136,7 @@ int main(int argc, char *argv[])
 	epicsExit(EXIT_FAILURE);
     }
     
-    softIocPVA_registerRecordDeviceDriver(pdbbase);
+    loadServer_registerRecordDeviceDriver(pdbbase);
     registryFunctionAdd("exit", (REGISTRYFUNCTION) exitSubroutine);
 
     while (argc>1 && **argv == '-') {
