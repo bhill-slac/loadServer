@@ -2,10 +2,14 @@
 # Required macros:
 #	P		PV prefix
 #	LAST_N	Number of last counter
+# Optional macros:
+#	DELAY	Delay period
 
 record(ao, "$(P)period")
 {
-    field(VAL, "1")
+#	field(VAL, "$(DELAY=0.00575)")	# ~1khz
+    field(VAL, "$(DELAY=0.017)")	# ~100hz
+#	field(VAL, "$(DELAY=0.01)")
     field(OUT, "$(P)drive.ODLY")
     field(PINI, "YES")
 }
@@ -13,10 +17,9 @@ record(ao, "$(P)period")
 record(calcout, "$(P)drive")
 {
     field(PINI, "RUNNING")
-#	field(ODLY, "$(DELAY=0.00575)")	# ~1khz
-    field(ODLY, "$(DELAY=0.017)")	# ~100hz
-#	field(ODLY, "$(DELAY=0.01)")
+    field(CALC, "A>=(2**53)?0:VAL+1")
+    field(PREC, "0")
     field(OUT , "$(P)drive.PROC CA")
-    field(FLNK, "$(P)Count1")
+	field(FLNK, "$(P)Count0")
 }
 

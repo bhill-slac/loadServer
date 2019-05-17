@@ -1,0 +1,9 @@
+# 10CircBuff.substitutions
+
+file CircBuff.db
+{
+	{  N, FLNK },
+	{  0, "$(P)CircBuff1"  }, {  1, "$(P)CircBuff2"  }, {  2, "$(P)CircBuff3"  }, {  3, "$(P)CircBuff4"  }, {  4, "$(P)CircBuff5"  },
+	{  5, "$(P)CircBuff6"  }, {  6, "$(P)CircBuff7"  }, {  7, "$(P)CircBuff8"  }, {  8, "$(P)CircBuff9"  }, {  9, "" }
+}
+

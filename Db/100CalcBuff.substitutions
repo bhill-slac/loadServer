@@ -1,0 +1,27 @@
+# 100CircBuff.substitutions
+
+file CircBuff.db
+{
+	{  N, FLNK },
+	{  0, "$(P)CircBuff1"  }, {  1, "$(P)CircBuff2"  }, {  2, "$(P)CircBuff3"  }, {  3, "$(P)CircBuff4"  }, {  4, "$(P)CircBuff5"  },
+	{  5, "$(P)CircBuff6"  }, {  6, "$(P)CircBuff7"  }, {  7, "$(P)CircBuff8"  }, {  8, "$(P)CircBuff9"  }, {  9, "$(P)CircBuff10" },
+	{ 10, "$(P)CircBuff11" }, { 11, "$(P)CircBuff12" }, { 12, "$(P)CircBuff13" }, { 13, "$(P)CircBuff14" }, { 14, "$(P)CircBuff15" },
+	{ 15, "$(P)CircBuff16" }, { 16, "$(P)CircBuff17" }, { 17, "$(P)CircBuff18" }, { 18, "$(P)CircBuff19" }, { 19, "$(P)CircBuff20" },
+	{ 20, "$(P)CircBuff21" }, { 21, "$(P)CircBuff22" }, { 22, "$(P)CircBuff23" }, { 23, "$(P)CircBuff24" }, { 24, "$(P)CircBuff25" },
+	{ 25, "$(P)CircBuff26" }, { 26, "$(P)CircBuff27" }, { 27, "$(P)CircBuff28" }, { 28, "$(P)CircBuff29" }, { Z9, "$(P)CircBuff20" },
+	{ 30, "$(P)CircBuff31" }, { 31, "$(P)CircBuff32" }, { 32, "$(P)CircBuff33" }, { 33, "$(P)CircBuff34" }, { 34, "$(P)CircBuff35" },
+	{ 35, "$(P)CircBuff36" }, { 36, "$(P)CircBuff37" }, { 37, "$(P)CircBuff38" }, { 38, "$(P)CircBuff39" }, { Z9, "$(P)CircBuff40" },
+	{ 40, "$(P)CircBuff41" }, { 41, "$(P)CircBuff42" }, { 42, "$(P)CircBuff43" }, { 43, "$(P)CircBuff44" }, { 44, "$(P)CircBuff45" },
+	{ 45, "$(P)CircBuff46" }, { 46, "$(P)CircBuff47" }, { 47, "$(P)CircBuff48" }, { 48, "$(P)CircBuff49" }, { Z9, "$(P)CircBuff50" },
+	{ 50, "$(P)CircBuff51" }, { 51, "$(P)CircBuff52" }, { 52, "$(P)CircBuff53" }, { 53, "$(P)CircBuff54" }, { 54, "$(P)CircBuff55" },
+	{ 55, "$(P)CircBuff56" }, { 56, "$(P)CircBuff57" }, { 57, "$(P)CircBuff58" }, { 58, "$(P)CircBuff59" }, { Z9, "$(P)CircBuff60" },
+	{ 60, "$(P)CircBuff61" }, { 61, "$(P)CircBuff62" }, { 62, "$(P)CircBuff63" }, { 63, "$(P)CircBuff64" }, { 64, "$(P)CircBuff65" },
+	{ 65, "$(P)CircBuff66" }, { 66, "$(P)CircBuff67" }, { 67, "$(P)CircBuff68" }, { 68, "$(P)CircBuff69" }, { Z9, "$(P)CircBuff70" },
+	{ 70, "$(P)CircBuff71" }, { 71, "$(P)CircBuff72" }, { 72, "$(P)CircBuff73" }, { 73, "$(P)CircBuff74" }, { 74, "$(P)CircBuff75" },
+	{ 75, "$(P)CircBuff76" }, { 76, "$(P)CircBuff77" }, { 77, "$(P)CircBuff78" }, { 78, "$(P)CircBuff79" }, { Z9, "$(P)CircBuff80" },
+	{ 80, "$(P)CircBuff81" }, { 81, "$(P)CircBuff82" }, { 82, "$(P)CircBuff83" }, { 83, "$(P)CircBuff84" }, { 84, "$(P)CircBuff85" },
+	{ 85, "$(P)CircBuff86" }, { 86, "$(P)CircBuff87" }, { 87, "$(P)CircBuff88" }, { 88, "$(P)CircBuff89" }, { Z9, "$(P)CircBuff90" },
+	{ 90, "$(P)CircBuff91" }, { 91, "$(P)CircBuff92" }, { 92, "$(P)CircBuff93" }, { 93, "$(P)CircBuff94" }, { 94, "$(P)CircBuff95" },
+	{ 95, "$(P)CircBuff96" }, { 96, "$(P)CircBuff97" }, { 97, "$(P)CircBuff98" }, { 98, "$(P)CircBuff99" }, { Z9, "" }
+}
+
