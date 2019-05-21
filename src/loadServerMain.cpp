@@ -73,7 +73,7 @@
 
 extern "C" int loadServer_registerRecordDeviceDriver(struct dbBase *pdbbase);
 
-#define DBD_FILE "dbd/loadServerPVA.dbd"
+#define DBD_FILE "dbd/loadServer.dbd"
 #define EXIT_FILE "db/softIocExit.db"
 
 #ifdef VERSION_INT
@@ -149,8 +149,10 @@ int main(int argc, char *argv[])
 	
 	case 'd':
 	    if (dbLoadRecords(*++argv, macros)) {
-		epicsExit(EXIT_FAILURE);
+	    	printf( "dbLoadRecords( %s, %s ) Failed!\n", *argv, macros );
+			epicsExit(EXIT_FAILURE);
 	    }
+	    printf( "dbLoadRecords( %s, %s )\n", *argv, macros );
 	    loadedDb = 1;
 	    --argc;
 	    break;

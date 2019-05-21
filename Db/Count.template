@@ -6,12 +6,13 @@
 
 record(calcout, "$(P)Count$(N)")
 {
-    field(PINI, "RUNNING")
-#	field(INPA, "$(P)Count$(N)")
+#	field(PINI, "YES")
+#	field(INPA, "$(P)Count$(N) NMS")
 #	field(CALC, "A>=(2**53)?0:A+1")
-    field(CALC, "A>=(2**53)?0:VAL+1")
+	field(CALC, "A>=(2**53)?0:VAL+1")
     field(PREC, "0")
-	field(TSEL, "$(P)drive.TIME")
+	field(TSEL, "$(P)Count0.TIME")
+	field(VAL,  "0")
 	field(FLNK, "$(FLNK=)")
 }
 

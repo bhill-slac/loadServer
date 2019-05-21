@@ -1,0 +1,28 @@
+# drive.db
+# Load this file after Counters.
+# Required macros:
+#   P       PV prefix
+# Optional macros:
+#   DELAY   Delay period
+
+# Clear TSEL field for Count0
+record(calcout, "$(P)Count0") { field(TSEL, "" ) }
+
+record(ao, "$(P)period")
+{
+#   field(VAL, "$(DELAY=0.00575)")  # ~1khz
+    field(VAL, "$(DELAY=0.017)")    # ~100hz
+#   field(VAL, "$(DELAY=0.01)")
+    field(OUT, "$(P)drive.ODLY")
+    field(PINI, "YES")
+}
+
+record(calcout, "$(P)drive")
+{
+    field(PINI, "RUNNING")
+    field(CALC, "A>=(2**53)?0:VAL+1")
+    field(PREC, "0")
+    field(OUT , "$(P)drive.PROC CA")
+    field(FLNK, "$(P)Count0")
+}
+
