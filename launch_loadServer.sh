@@ -24,8 +24,9 @@ echo TOP = $TOP
 
 cd $TOP
 $PYPROCMGR -c 10 $LOADSERVER \
-	'-m DELAY=0.010,P=PVA:GW:TEST:$PYPROC_ID:,NELM=10'	\
-	'-d db/drive_100Counters.db'
+	'-m DELAY=0.010,P=PVA:GW:TEST:$PYPROC_ID:,NELM=10 -d db/drive_100Counters.db'
+
+
 #	'-m DELAY=0.017,P=PVA:GW:TEST:$PYPROC_ID:,NELM=10'	\
 #$LOADSERVER	\
 #	-m DELAY=1.0,P=PVA:GW:TEST:1:,NELM=10	\
