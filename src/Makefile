@@ -21,6 +21,20 @@ loadServer_LIBS += qsrv
 loadServer_LIBS += $(EPICS_BASE_PVA_CORE_LIBS)
 loadServer_LIBS += $(EPICS_BASE_IOC_LIBS)
 
+PROD_IOC += loadIoc
+DBD += loadIoc.dbd
+
+loadIoc_DBD += softIoc.dbd
+loadIoc_DBD += PVAServerRegister.dbd
+loadIoc_DBD += qsrv.dbd
+
+loadIoc_SRCS += loadIocMain.cpp
+loadIoc_SRCS += loadIoc_registerRecordDeviceDriver.cpp
+
+loadIoc_LIBS += qsrv
+loadIoc_LIBS += $(EPICS_BASE_PVA_CORE_LIBS)
+loadIoc_LIBS += $(EPICS_BASE_IOC_LIBS)
+
 DB_INSTALLS += $(EPICS_BASE)/db/softIocExit.db
 
 #===========================
