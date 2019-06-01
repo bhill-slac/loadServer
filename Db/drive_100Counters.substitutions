@@ -3,8 +3,8 @@ file Count.template
 {
 	pattern
 	{  N, FLNK },
-	{  0, "$(P)Count1"  }, {  1, "$(P)Count2"  }, {  2, "$(P)Count3"  }, {  3, "$(P)Count4"  }, {  4, "$(P)Count5"  },
-	{  5, "$(P)Count6"  }, {  6, "$(P)Count7"  }, {  7, "$(P)Count8"  }, {  8, "$(P)Count9"  }, {  9, "$(P)Count10" },
+	{ 00, "$(P)Count01" }, { 01, "$(P)Count02" }, { 02, "$(P)Count03" }, { 03, "$(P)Count04" }, { 04, "$(P)Count05" },
+	{ 05, "$(P)Count06" }, { 06, "$(P)Count07" }, { 07, "$(P)Count08" }, { 08, "$(P)Count09" }, { 09, "$(P)Count10" },
 	{ 10, "$(P)Count11" }, { 11, "$(P)Count12" }, { 12, "$(P)Count13" }, { 13, "$(P)Count14" }, { 14, "$(P)Count15" },
 	{ 15, "$(P)Count16" }, { 16, "$(P)Count17" }, { 17, "$(P)Count18" }, { 18, "$(P)Count19" }, { 19, "$(P)Count20" },
 	{ 20, "$(P)Count21" }, { 21, "$(P)Count22" }, { 22, "$(P)Count23" }, { 23, "$(P)Count24" }, { 24, "$(P)Count25" },

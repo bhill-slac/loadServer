@@ -11,7 +11,7 @@ record(calcout, "$(P)Count$(N)")
 #	field(CALC, "A>=(2**53)?0:A+1")
 	field(CALC, "A>=(2**53)?0:VAL+1")
     field(PREC, "0")
-	field(TSEL, "$(P)Count0.TIME")
+	field(TSEL, "$(P)Count00.TIME")
 	field(VAL,  "0")
 	field(FLNK, "$(FLNK=)")
 }

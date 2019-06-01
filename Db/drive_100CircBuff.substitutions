@@ -3,8 +3,8 @@ file Count.template
 {
 	pattern
 	{  N, FLNK },
-	{  0, "$(P)Count1"  }, {  1, "$(P)Count2"  }, {  2, "$(P)Count3"  }, {  3, "$(P)Count4"  }, {  4, "$(P)Count5"  },
-	{  5, "$(P)Count6"  }, {  6, "$(P)Count7"  }, {  7, "$(P)Count8"  }, {  8, "$(P)Count9"  }, {  9, "$(P)Count10" },
+	{ 00, "$(P)Count01" }, { 01, "$(P)Count02" }, { 02, "$(P)Count03" }, { 03, "$(P)Count04" }, { 04, "$(P)Count05" },
+	{ 05, "$(P)Count06" }, { 06, "$(P)Count07" }, { 07, "$(P)Count08" }, { 08, "$(P)Count09" }, { 09, "$(P)Count10" },
 	{ 10, "$(P)Count11" }, { 11, "$(P)Count12" }, { 12, "$(P)Count13" }, { 13, "$(P)Count14" }, { 14, "$(P)Count15" },
 	{ 15, "$(P)Count16" }, { 16, "$(P)Count17" }, { 17, "$(P)Count18" }, { 18, "$(P)Count19" }, { 19, "$(P)Count20" },
 	{ 20, "$(P)Count21" }, { 21, "$(P)Count22" }, { 22, "$(P)Count23" }, { 23, "$(P)Count24" }, { 24, "$(P)Count25" },
@@ -22,7 +22,7 @@ file Count.template
 	{ 80, "$(P)Count81" }, { 81, "$(P)Count82" }, { 82, "$(P)Count83" }, { 83, "$(P)Count84" }, { 84, "$(P)Count85" },
 	{ 85, "$(P)Count86" }, { 86, "$(P)Count87" }, { 87, "$(P)Count88" }, { 88, "$(P)Count89" }, { 89, "$(P)Count90" },
 	{ 90, "$(P)Count91" }, { 91, "$(P)Count92" }, { 92, "$(P)Count93" }, { 93, "$(P)Count94" }, { 94, "$(P)Count95" },
-	{ 95, "$(P)Count96" }, { 96, "$(P)Count97" }, { 97, "$(P)Count98" }, { 98, "$(P)Count99" }, { 99, "" },
+	{ 95, "$(P)Count96" }, { 96, "$(P)Count97" }, { 97, "$(P)Count98" }, { 98, "$(P)Count99" }, { 99, "" }
 }
 file drive.template
 {
@@ -33,11 +33,11 @@ file CircBuff.template
 {
 	pattern
 	{  N, NELM,	FLNK },
-	{  0, "\$(NELM=500)", "$(P)CircBuff1"  }, {  1, "\$(NELM=500)", "$(P)CircBuff2"  },
-	{  2, "\$(NELM=500)", "$(P)CircBuff3"  }, {  3, "\$(NELM=500)", "$(P)CircBuff4"  },
-	{  4, "\$(NELM=500)", "$(P)CircBuff5"  }, {  5, "\$(NELM=500)", "$(P)CircBuff6"  },
-	{  6, "\$(NELM=500)", "$(P)CircBuff7"  }, {  7, "\$(NELM=500)", "$(P)CircBuff8"  },
-	{  8, "\$(NELM=500)", "$(P)CircBuff9"  }, {  9, "\$(NELM=500)", "$(P)CircBuff10" },
+	{ 00, "\$(NELM=500)", "$(P)CircBuff01" }, {  1, "\$(NELM=500)", "$(P)CircBuff02" },
+	{ 02, "\$(NELM=500)", "$(P)CircBuff03" }, {  3, "\$(NELM=500)", "$(P)CircBuff04" },
+	{ 04, "\$(NELM=500)", "$(P)CircBuff05" }, {  5, "\$(NELM=500)", "$(P)CircBuff06" },
+	{ 06, "\$(NELM=500)", "$(P)CircBuff07" }, {  7, "\$(NELM=500)", "$(P)CircBuff08" },
+	{ 08, "\$(NELM=500)", "$(P)CircBuff09" }, {  9, "\$(NELM=500)", "$(P)CircBuff10" },
 	{ 10, "\$(NELM=500)", "$(P)CircBuff11" }, { 11, "\$(NELM=500)", "$(P)CircBuff12" },
 	{ 12, "\$(NELM=500)", "$(P)CircBuff13" }, { 13, "\$(NELM=500)", "$(P)CircBuff14" },
 	{ 14, "\$(NELM=500)", "$(P)CircBuff15" }, { 15, "\$(NELM=500)", "$(P)CircBuff16" },

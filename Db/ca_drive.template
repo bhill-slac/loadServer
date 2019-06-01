@@ -9,6 +9,6 @@ record(calcout, "$(P)drive")
     field(PINI, "RUNNING")
     field(A,    "$(CA_LNK) CPP")
     field(TSEL, "$(CA_LNK).TIME")
-    field(FLNK, "$(P)Count0")
+    field(FLNK, "$(P)Count00")
 }
 

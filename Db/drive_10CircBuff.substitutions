@@ -3,8 +3,8 @@ file Count.template
 {
 	pattern
 	{  N, FLNK },
-	{  0, "$(P)Count1"  }, {  1, "$(P)Count2"  }, {  2, "$(P)Count3"  }, {  3, "$(P)Count4"  }, {  4, "$(P)Count5"  },
-	{  5, "$(P)Count6"  }, {  6, "$(P)Count7"  }, {  7, "$(P)Count8"  }, {  8, "$(P)Count9"  }, {  9, "" },
+	{ 00, "$(P)Count01" }, { 01, "$(P)Count02" }, { 02, "$(P)Count03" }, { 03, "$(P)Count04" }, { 04, "$(P)Count05" },
+	{ 05, "$(P)Count06" }, { 06, "$(P)Count07" }, { 07, "$(P)Count08" }, { 08, "$(P)Count09" }, { 09, "" }
 }
 file drive.template
 {
@@ -14,10 +14,10 @@ file CircBuff.template
 {
 	pattern
 	{  N, NELM,	FLNK },
-	{  0, "\$(NELM=500)", "$(P)CircBuff1"  }, {  1, "\$(NELM=500)", "$(P)CircBuff2"  },
-	{  2, "\$(NELM=500)", "$(P)CircBuff3"  }, {  3, "\$(NELM=500)", "$(P)CircBuff4"  },
-	{  4, "\$(NELM=500)", "$(P)CircBuff5"  }, {  5, "\$(NELM=500)", "$(P)CircBuff6"  },
-	{  6, "\$(NELM=500)", "$(P)CircBuff7"  }, {  7, "\$(NELM=500)", "$(P)CircBuff8"  },
-	{  8, "\$(NELM=500)", "$(P)CircBuff9"  }, {  9, "\$(NELM=500)", "" },
+	{ 00, "\$(NELM=500)", "$(P)CircBuff01" }, {  1, "\$(NELM=500)", "$(P)CircBuff02" },
+	{ 02, "\$(NELM=500)", "$(P)CircBuff03" }, {  3, "\$(NELM=500)", "$(P)CircBuff04" },
+	{ 04, "\$(NELM=500)", "$(P)CircBuff05" }, {  5, "\$(NELM=500)", "$(P)CircBuff06" },
+	{ 06, "\$(NELM=500)", "$(P)CircBuff07" }, {  7, "\$(NELM=500)", "$(P)CircBuff08" },
+	{ 08, "\$(NELM=500)", "$(P)CircBuff09" }, {  9, "\$(NELM=500)", "" }
 }
 

@@ -5,8 +5,8 @@
 # Optional macros:
 #   DELAY   Delay period
 
-# Clear TSEL field for Count0
-record(calcout, "$(P)Count0") { field(TSEL, "" ) }
+# Clear TSEL field for Count00
+record(calcout, "$(P)Count00") { field(TSEL, "" ) }
 
 record(ao, "$(P)period")
 {
@@ -23,6 +23,6 @@ record(calcout, "$(P)drive")
     field(CALC, "A>=(2**53)?0:VAL+1")
     field(PREC, "0")
     field(OUT , "$(P)drive.PROC CA")
-    field(FLNK, "$(P)Count0")
+    field(FLNK, "$(P)Count00")
 }
 
