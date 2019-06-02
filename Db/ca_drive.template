@@ -1,4 +1,4 @@
-# ca_drive.db
+# ca_drive.template
 # Required macros:
 #   P       PV prefix
 #   CA_LNK  CA link which is monitored for rate and TSEL
@@ -7,7 +7,7 @@
 record(calcout, "$(P)drive")
 {
     field(PINI, "RUNNING")
-    field(A,    "$(CA_LNK) CPP")
+    field(INPA, "$(CA_LNK) CPP")
     field(TSEL, "$(CA_LNK).TIME")
     field(FLNK, "$(P)Count00")
 }

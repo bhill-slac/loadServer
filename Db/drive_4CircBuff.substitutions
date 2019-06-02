@@ -1,0 +1,19 @@
+# drive_4CircBuff.substitutions
+file Count.template
+{
+	pattern
+	{  N, FLNK },
+	{ 00, "$(P)Count01" }, { 01, "$(P)Count02" }, { 02, "$(P)Count03" }, { 03, "" }
+}
+file drive.template
+{
+	{ DELAY = "\$(DELAY=1)" }
+}
+file CircBuff.template
+{
+	pattern
+	{  N, NELM,	FLNK },
+	{ 00, "\$(NELM=500)", "$(P)CircBuff01" }, { 01, "\$(NELM=500)", "$(P)CircBuff02" },
+	{ 02, "\$(NELM=500)", "$(P)CircBuff03" }, { 03, "\$(NELM=500)", "" }
+}
+

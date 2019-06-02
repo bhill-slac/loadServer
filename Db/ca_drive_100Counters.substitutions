@@ -1,0 +1,31 @@
+# drive_100Counters.substitutions
+file Count.template
+{
+	pattern
+	{  N, FLNK },
+	{ 00, "$(P)Count01" }, { 01, "$(P)Count02" }, { 02, "$(P)Count03" }, { 03, "$(P)Count04" }, { 04, "$(P)Count05" },
+	{ 05, "$(P)Count06" }, { 06, "$(P)Count07" }, { 07, "$(P)Count08" }, { 08, "$(P)Count09" }, { 09, "$(P)Count10" },
+	{ 10, "$(P)Count11" }, { 11, "$(P)Count12" }, { 12, "$(P)Count13" }, { 13, "$(P)Count14" }, { 14, "$(P)Count15" },
+	{ 15, "$(P)Count16" }, { 16, "$(P)Count17" }, { 17, "$(P)Count18" }, { 18, "$(P)Count19" }, { 19, "$(P)Count20" },
+	{ 20, "$(P)Count21" }, { 21, "$(P)Count22" }, { 22, "$(P)Count23" }, { 23, "$(P)Count24" }, { 24, "$(P)Count25" },
+	{ 25, "$(P)Count26" }, { 26, "$(P)Count27" }, { 27, "$(P)Count28" }, { 28, "$(P)Count29" }, { 29, "$(P)Count30" },
+	{ 30, "$(P)Count31" }, { 31, "$(P)Count32" }, { 32, "$(P)Count33" }, { 33, "$(P)Count34" }, { 34, "$(P)Count35" },
+	{ 35, "$(P)Count36" }, { 36, "$(P)Count37" }, { 37, "$(P)Count38" }, { 38, "$(P)Count39" }, { 39, "$(P)Count40" },
+	{ 40, "$(P)Count41" }, { 41, "$(P)Count42" }, { 42, "$(P)Count43" }, { 43, "$(P)Count44" }, { 44, "$(P)Count45" },
+	{ 45, "$(P)Count46" }, { 46, "$(P)Count47" }, { 47, "$(P)Count48" }, { 48, "$(P)Count49" }, { 49, "$(P)Count50" },
+	{ 50, "$(P)Count51" }, { 51, "$(P)Count52" }, { 52, "$(P)Count53" }, { 53, "$(P)Count54" }, { 54, "$(P)Count55" },
+	{ 55, "$(P)Count56" }, { 56, "$(P)Count57" }, { 57, "$(P)Count58" }, { 58, "$(P)Count59" }, { 59, "$(P)Count60" },
+	{ 60, "$(P)Count61" }, { 61, "$(P)Count62" }, { 62, "$(P)Count63" }, { 63, "$(P)Count64" }, { 64, "$(P)Count65" },
+	{ 65, "$(P)Count66" }, { 66, "$(P)Count67" }, { 67, "$(P)Count68" }, { 68, "$(P)Count69" }, { 69, "$(P)Count70" },
+	{ 70, "$(P)Count71" }, { 71, "$(P)Count72" }, { 72, "$(P)Count73" }, { 73, "$(P)Count74" }, { 74, "$(P)Count75" },
+	{ 75, "$(P)Count76" }, { 76, "$(P)Count77" }, { 77, "$(P)Count78" }, { 78, "$(P)Count79" }, { 79, "$(P)Count80" },
+	{ 80, "$(P)Count81" }, { 81, "$(P)Count82" }, { 82, "$(P)Count83" }, { 83, "$(P)Count84" }, { 84, "$(P)Count85" },
+	{ 85, "$(P)Count86" }, { 86, "$(P)Count87" }, { 87, "$(P)Count88" }, { 88, "$(P)Count89" }, { 89, "$(P)Count90" },
+	{ 90, "$(P)Count91" }, { 91, "$(P)Count92" }, { 92, "$(P)Count93" }, { 93, "$(P)Count94" }, { 94, "$(P)Count95" },
+	{ 95, "$(P)Count96" }, { 96, "$(P)Count97" }, { 97, "$(P)Count98" }, { 98, "$(P)Count99" }, { 99, "" },
+}
+file ca_drive.template
+{
+	{ DELAY = "\$(DELAY=1)" }
+}
+

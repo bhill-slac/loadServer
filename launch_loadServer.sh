@@ -25,14 +25,12 @@ echo TOP = $TOP
 echo "loadServers being launched w/o console log files."
 echo "There's another version of this script in stressTestClients.git that logs to test dir hierarchy."
 
+export TEST_CA_LNK
+
+echo "Launching 4 loadServers for drive_4CircBuff, prefix: PVA:GW:TEST:"
 cd $TOP
-$PYPROCMGR -c 10 $LOADSERVER \
-	'-m DELAY=0.007,P=PVA:GW:TEST:$PYPROC_ID:,NELM=10 -d db/drive_100Counters.db'
+$PYPROCMGR -c 4 $LOADSERVER \
+	'-m DELAY=0.01,P=PVA:GW:TEST:$PYPROC_ID:' \
+	'-m NELM=20 -d db/drive_4CircBuff.db'
 
-
-#	'-m DELAY=0.017,P=PVA:GW:TEST:$PYPROC_ID:,NELM=10'	\
-#$LOADSERVER	\
-#	-m DELAY=1.0,P=PVA:GW:TEST:1:,NELM=10	\
-#	-d $TOP/db/drive_10Counters.db
-
-
+#	'-m NELM=20,CA_LNK=$TEST_CA_LNK -d db/ca_drive_4CircBuff.db'

@@ -1,0 +1,13 @@
+# drive_10Counters.substitutions
+file Count.template
+{
+	pattern
+	{  N, FLNK },
+	{ 00, "$(P)Count01" }, { 01, "$(P)Count02" }, { 02, "$(P)Count03" }, { 03, "$(P)Count04" }, { 04, "$(P)Count05" },
+	{ 05, "$(P)Count06" }, { 06, "$(P)Count07" }, { 07, "$(P)Count08" }, { 08, "$(P)Count09" }, { 09, "" }
+}
+file ca_drive.template
+{
+	{ DELAY = "\$(DELAY=1)" }
+}
+
