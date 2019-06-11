@@ -6,9 +6,6 @@
 
 record(calcout, "$(P)Count$(N)")
 {
-#	field(PINI, "YES")
-#	field(INPA, "$(P)Count$(N) NMS")
-#	field(CALC, "A>=(2**53)?0:A+1")
 	field(CALC, "A>=(2**53)?0:VAL+1")
     field(PREC, "0")
 	field(TSEL, "$(P)Count00.TIME")
@@ -24,7 +21,6 @@ record(calc, "$(P)Rate$(N)")
 	field( INPD, "$(P)Rate$(N).VAL NPP NMS" )	# Previous rate
 	field( INPE, "$(RATE_SMOOTH=0.0)" )			# Smoothing factor
 	field( CALC, "(D*E)/C+MAX(0,B-A)*(1-E)/C" )
-#	field( CALC, "F:=MAX(0,B-A);A:=B;F" )
 	field( PREC, "2" )
 	field( MDEL, "0.01" )
 	field( EGU,  "Hz" )
