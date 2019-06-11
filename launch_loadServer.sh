@@ -29,8 +29,7 @@ export TEST_CA_LNK
 
 echo "Launching 4 loadServers for drive_4CircBuff, prefix: PVA:GW:TEST:"
 cd $TOP
-$PYPROCMGR -c 4 $LOADSERVER \
-	'-m DELAY=0.01,P=PVA:GW:TEST:$PYPROC_ID:' \
-	'-m NELM=20 -d db/drive_4CircBuff.db'
+$PYPROCMGR -v -c 4 $LOADSERVER \
+	'-m DELAY=0.01,P=PVA:GW:TEST:$PYPROC_ID:,NELM=20 -d db/drive_4CircBuff.db'
 
 #	'-m NELM=20,CA_LNK=$TEST_CA_LNK -d db/ca_drive_4CircBuff.db'
